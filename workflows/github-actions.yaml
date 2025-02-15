@@ -1,0 +1,13 @@
+name: Basic Cypress Pipeline Tests on Github Actions
+
+on: push
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: npm test
+        uses: cypress-io/github-action@v6
