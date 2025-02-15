@@ -1,3 +1,4 @@
+# GitHub Actions 
 name: Basic Cypress Pipeline Tests on Github Actions
 
 on: push
@@ -11,3 +12,18 @@ jobs:
         uses: actions/checkout@v3
       - name: npm test
         uses: cypress-io/github-action@v6
+
+# GitLab Pipelines
+#stages:
+  #- test
+
+#test:
+  #image: cypress/browsers:22.12.0
+  #stage: test
+  #script:
+    # install dependencies
+    #- yarn install
+    # run Cypress tests
+    #- yarn cypress run
+
+# https://docs.cypress.io/app/continuous-integration/overview
