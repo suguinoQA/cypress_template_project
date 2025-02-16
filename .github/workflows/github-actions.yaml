@@ -1,7 +1,7 @@
 # GitHub Actions 
 name: Basic Cypress Pipeline Tests on Github Actions
 
-on: pull_request
+on: push
 
 jobs:
   cypress-run:
